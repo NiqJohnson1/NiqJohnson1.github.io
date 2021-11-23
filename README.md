@@ -19,7 +19,7 @@
 
 <H2>Projects Built</h2>
   <h3>Covid Data</h3>
-  <a href="![image](https://user-images.githubusercontent.com/41593517/143103385-dfd2db00-a7f0-402d-982c-b2ee7b650db6.png)">
+  <a href="https://github.com/NiqJohnson1/niqjohnson1.github.io/blob/main/covid%20snapshot.PNG)">
   <p>This page displays the number of people who have had covid. This data is being pulled from an API updating the numbers in realtime</p>
   
 <p>This page is to showcase the projects that I am working on</p>
