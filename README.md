@@ -8,18 +8,18 @@
 <li>Java</li>
 <li>JavaScript</li>
 <li>HTML/CSS</li>
-<br>
+
 <h3>Databases</h3>
 <li>MySQL</li>
 <li>SQL</li>
-<br>
+
 <h3>Frameworks</h3>
 <li>Angular</li>
 <li>SpringBoot</li>
 
 <H2>Projects Built</h2>
   <h3>Covid Data</h3>
-  <a href="https://github.com/NiqJohnson1/niqjohnson1.github.io/blob/main/covid%20snapshot.PNG)">
+  <a href="https://niqjohnson1.github.io/first-app-covid/">
   <p>This page displays the number of people who have had covid. This data is being pulled from an API updating the numbers in realtime</p>
   
 <p>This page is to showcase the projects that I am working on</p>
