@@ -4,7 +4,7 @@
 <p>im a web development student, working on cool projects that will better prepare me as a software developer.
 </p>
 
-<ul>Programming Languages</ul>
+<H2>Programming Languages</h2>
 <li>Java</li>
 <li>JavaScript</li>
 <li>HTML/CSS</li>
