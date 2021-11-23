@@ -1,17 +1,25 @@
 # Niquelle Johnson - Software Dev Student
 
-<h2>Who I Am</h2>
-<p>im a web development student, working on cool projects that will better prepare me as a software developer.
+<h2>Hey There!</h2>
+<p>Im a web development student, working on cool projects that will better prepare me as a software developer. I graduated with a bachelors in Web development and my background is primarily within the healthcare industry. I'm also a certified Project Manager.  Although I was able to develop my leadership skills and health care knowledge over my career,  I have a love for front-end development. I'm currently learning the skills needed to not only become a software developer but to utilize better programming practices and mentor future developers as well.
 </p>
-
-<H2>Programming Languages</h2>
+<H2>Here's a few technologies I've learned:</h2>
+<H3>Programming Languages</h3>
 <li>Java</li>
 <li>JavaScript</li>
 <li>HTML/CSS</li>
 <br>
-<ul>Databases</ul>
+<h3>Databases</h3>
 <li>MySQL</li>
 <li>SQL</li>
+<br>
+<h3>Frameworks</h3>
+<li>Angular</li>
+<li>SpringBoot</li>
 
-
+<H2>Projects Built</h2>
+  <h3>Covid Data</h3>
+  <a href="![image](https://user-images.githubusercontent.com/41593517/143103385-dfd2db00-a7f0-402d-982c-b2ee7b650db6.png)">
+  <p>This page displays the number of people who have had covid. This data is being pulled from an API updating the numbers in realtime</p>
+  
 <p>This page is to showcase the projects that I am working on</p>
