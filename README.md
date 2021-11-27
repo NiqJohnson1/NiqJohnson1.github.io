@@ -18,8 +18,8 @@
 <li>SpringBoot</li>
 
 <H2>Projects Built</h2>
-  <h3>Covid Data</h3>
-  <a href="https://niqjohnson1.github.io/first-app-covid/">
+  <h3><a href="https://niqjohnson1.github.io/first-app-covid/">Covid Data</h3>
+  
   <p>This page displays the number of people who have had covid. This data is being pulled from an API updating the numbers in realtime</p>
   
-<p>This page is to showcase the projects that I am working on</p>
+
