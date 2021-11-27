@@ -19,7 +19,11 @@
 
 <H2>Projects Built</h2>
   <h3><a href="https://niqjohnson1.github.io/first-app-covid/">Covid Data</a></h3>
+ 
+  <p><b>Description:</b>This page displays the total number of people with COVID, the number of deaths and total amount recovered. This data is being pulled from an API updating the numbers in realtime</p>
+  <p><b>Technologies Used:</b> JavaScript, HTML, CSS, Bootstrap, and JQuery for the refresh button</p>
   
-  <p>This page displays the number of people who have had covid. This data is being pulled from an API updating the numbers in realtime</p>
+  
+  
   
 
