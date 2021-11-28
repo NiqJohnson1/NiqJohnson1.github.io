@@ -1,0 +1,19 @@
+.about {
+    
+    color: purple;
+    text-align:left;
+}
+
+.list{
+    list-style: none;
+}
+
+.lead{
+    color: black;
+}
+
+.container-fluid{
+    align-content: center;
+}
+
+.navbar-nav.navbar-center {

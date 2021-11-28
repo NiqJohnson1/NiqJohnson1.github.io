@@ -1,156 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<html lang="en">
 
-<head th:replace="fragments :: head">
-    <title>Covid-19 API in JavaScript</title>
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <!-- Custom CSS file -->
-    <link rel="stylesheet" href="custom-style.css">
-    <!--JS file-->
-    <script src="script.js" defer></script>
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="custom-main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .navbar-nav.navbar-center {
+
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translatex(-50%);
+    }
+  </style>
 </head>
-
-
 
 <body>
 
-    <nav class="navbar">
-        <div class="brand-title"><a href="https://niqjohnson1.github.io">Niquelle's Portfolio</a></div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="https://github.com/NiqJohnson1">Github</a></li>
-                <li><a href="https://niqjohnson1.github.io">About</a></li>
-                <li><a href="https://niqjohnson1.github.io/first-app-covid">My Projects</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container text-center">
-
-        <h1 class="text-center mt-5">Covid-19 Live Data in Table</h1>
-        <br><br>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th class="text-center">Total Cases</th>
-                    <th class="text-center">Total Deaths</th>
-                    <th class="text-center">Total Recovered</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="data"></tr>
-            </tbody>
-        </table>
-        <br>
-
-        <button onclick="refreshData()" class="btn btn-danger btn-lg button">
-            Refresh Data
-        </button>
+  <div class="container-fluid p-5 bg-primary text-white text-center">
+    <h1>Niquelle Johnson</h1>
+    <p>Software Developer</p>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+    <div class="container-fluid text-center">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="nav-item">
+          <a class="nav-link" href="https://niqjohnson1.github.io">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://github.com/NiqJohnson1">My Github</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://linkedin.com/in/niquelle-johnson">Contact</a>
+        </li>
+      </ul>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2 class="text-center">Reduce the Spread of Covid-19</h2>
-    <br>
-    <br>
+  </nav>
+
+
+
+  <div class="container mt-5">
     <div class="row">
-        <div class="col-md-4">
-            <div class="caption">
-                <p>Wear a mask</p>
-            </div>
-            <div class="thumbnail">
-                <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">
-                    <img src="images/virus-gf6c89d0d1_1280.png" class="corners" alt="Mask" style="width: 50%">
-                </a>
-                <br>
-                <div>
-                    <p class="thumb-text">Find out how wearing a mask can protect yourself and others around you.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="caption">
-                <p>Sanitize</p>
-            </div>
-            <div class="thumbnail">
-                <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html"
-                    class="pic">
-                    <img src="images/sanitizer-g38461555a_1280.png" class="corners" alt="Sanitize" style="width: 40%"
-                        style="height: 40%">
+      <div class="col-sm-4">
+        <h3>About Me</h3>
+        <p class="lead">I hold a bachelors in Web development and my background is primarily within the
+          healthcare
+          industry. Also, i'm certified as a Project Manager. Although I was able to develop my leadership skills and
+          health
+          care knowledge over my career, I have a love for front-end development.</p>
+        <p class="lead">I'm currently learning the skills needed to not only become a software developer but to utilize
+          better
+          programming practices and mentor future developers as well.</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Technologies Used</h3>
+        <h6 class="lead">Programming Languages</h6>
+        <ul class="list">
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+        </ul>
 
-                </a>
-                <br>
-                <div>
-                    <p class="thumb-text">See what cleaning products the CDC reccomends to reduce germs and decrease
-                        risk of
-                        infection from surfaces.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="caption">
-                <p>Get Vaccinated</p>
-            </div>
-            <div class="thumbnail">
-                <a href="https://www.vaccines.gov/">
-                    <img src="images/vaccine-g08ed37358_1280.png" class="corners" alt="Vaccine" style="width:50%">
-                </a>
+        <h6 class="lead">Databases</h6>
+        <ul class="list">
+          <li>MySQL</li>
+          <li>SQL</li>
+        </ul>
 
-                <div>
-                    <p class="thumb-text">Not sure where to go? Here's a list of places to get vaccinated.</p>
-                </div>
-            </div>
-
+        <h6 class="lead">Frameworks</h6>
+        <ul class="list">
+          <li>Angular</li>
+          <li>SpringBoot</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h3>Projects</h3>
+        <h5 class="list"><a href="https://niqjohnson1.github.io/first-app-covid/">Covid App</a></h5>
+        <div class="images">
+          <a href="https://niqjohnson1.github.io/first-app-covid/">
+            <img src="Portfolio/Covid/covid snapshot.PNG" class="img-thumbnail" alt="Covid">
+          </a>
         </div>
+        <p class="lead"><b>Description: </b>This page displays the total number of people with COVID, the number of
+          deaths and total
+          amount
+          recovered. This data is being pulled from an API updating the numbers in realtime</p>
+        <p class="lead"> <b>Technologies Used: </b> JavaScript, HTML, CSS, Bootstrap, and JQuery for the refresh
+          button</p>
+
+      </div>
     </div>
+  </div>
+
 </body>
-<br>
-
-<div class="vertical-center text-center">
-    <p>*This data was last updated on: 10-26-2021</p>
-</div>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>
-
-    init()
-
-    function init() {
-        var url = "https://api.covid19api.com/summary";
-        var data = '';
-
-        $.get(url, function (data) {
-            console.log(data.Global);
-
-            data = `
-    <td>${data.Global.TotalConfirmed}</td>
-    <td>${data.Global.TotalDeaths}</td>
-    <td>${data.Global.TotalRecovered}</td>
-    `
-
-            $("#data").html(data)
-        })
-    }
-
-    function refreshData() {
-        clearData()
-        init()
-    }
-
-    function clearData() {
-        $("#data").empty()
-
-    }
-
-</script>
 
 </html>
+
+
+
+
+
+<!-- <html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+  <title>Covid-19 API in JavaScript</title> -->
+<!-- bootstrap core css -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  Custom CSS file -->
+<!-- <link rel="stylesheet" href="custom-main.css">
+</head> -->
+
+<!-- <body>
+  <div class="jumbo">
+
+  </div>
+  <nav class="navbar">
+    <div class="brand-title"><a href="https://niqjohnson1.github.io">Niquelle's Portfolio</a></div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="https://github.com/NiqJohnson1">Github</a></li>
+        <li><a href="https://niqjohnson1.github.io">About</a></li>
+        <li><a href="https://niqjohnson1.github.io/first-app-covid">My Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Niquelle Johnson - Software Dev Student</h1>
+
+  <h3>Hello</h3>
+  <p>Im a web development student, working on projects that will better prepare me as a software developer. I graduated
+    with a bachelors in Web development and my background is primarily within the healthcare industry. I'm also a
+    certified Project Manager. Although I was able to develop my leadership skills and health care knowledge over my
+    career, I have a love for front-end development. I'm currently learning the skills needed to not only become a
+    software developer but to utilize better programming practices and mentor future developers as well.
+  </p>
+  <H2>Here's a few technologies I've learned:</h2>
+  <H3>Programming Languages</h3>
+  <li>Java</li>
+  <li>JavaScript</li>
+  <li>HTML/CSS</li>
+
+  <h3>Databases</h3>
+  <li>MySQL</li>
+  <li>SQL</li>
+
+  <h3>Frameworks</h3>
+  <li>Angular</li>
+  <li>SpringBoot</li>
+
+  <H2>Projects Built</h2>
+  <h3><a href="https://niqjohnson1.github.io/first-app-covid/">Covid Data</a></h3>
+
+  <p><b>Description: </b>This page displays the total number of people with COVID, the number of deaths and total amount
+    recovered. This data is being pulled from an API updating the numbers in realtime</p>
+  <p> <b>Technologies Used: </b> JavaScript, HTML, CSS, Bootstrap, and JQuery for the refresh button</p>
+
+</body>
+
+</html> -->
